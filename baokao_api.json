@@ -1,0 +1,64 @@
+{
+    "info": {
+        "name": "报考咨询系统 API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "测试 DeepSeek API 连接",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/test/deepseek",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "5000",
+                    "path": ["api", "test", "deepseek"]
+                }
+            }
+        },
+        {
+            "name": "专业问答",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"major_name\": \"计算机科学与技术\",\n    \"question\": \"这个专业的就业方向有哪些？\"\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/major/qa",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "5000",
+                    "path": ["api", "major", "qa"]
+                }
+            }
+        },
+        {
+            "name": "搜索专业",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/majors/search?q=计算机",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "5000",
+                    "path": ["api", "majors", "search"],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "计算机"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
