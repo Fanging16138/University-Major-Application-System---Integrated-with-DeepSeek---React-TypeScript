@@ -35,7 +35,7 @@ const gradientColors = [
   "bg-gradient-to-br from-green-200 via-cyan-200 to-blue-200",
   "bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200",
   "bg-gradient-to-br from-yellow-200 via-green-200 to-blue-200",
-  "bg-gradient-to-br from-red-200 via-pink-200 to-purple-200",
+  "bg-gradient-to-br from-red-200 via-pink-200 to-black-200",
 ]
 
 export default function Home() {
